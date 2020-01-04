@@ -3,10 +3,10 @@ import { bool } from "prop-types";
 const Loader = ({ loading }) => {
   return (
     <div
-      className = {
+      className={
         loading
           ? "pageloader is-bg-purple is-active"
-          : "is-bgnice-blue pageloader"
+          : "pageloader is-bg-purple "
       }
     >
       <span className="title">Cargando...</span>

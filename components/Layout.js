@@ -117,6 +117,7 @@ class Layout extends Component {
             .card {
               border-radius: 10px;
               margin-bottom: 1rem;
+              border: solid 1px #7a6ff0;
             }
             figure.media-left {
               margin: 1rem;
