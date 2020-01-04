@@ -1,4 +1,3 @@
-<!-- # GitHub Match  -->
 [![Framework](https://img.shields.io/badge/Framework-Next.js-important?style=plastic)](https://travis-ci.org/badges/badgerbadgerbadger) [![Version](https://img.shields.io/badge/Version-v.2.1.1b-blueviolet?style=plastic)](https://rubygems.org/gems/badgerbadgerbadger) [![License](https://img.shields.io/:license-ISC-blue.svg?style=plastic)](http://badges.isc-license.org)
 
 ---
@@ -9,16 +8,16 @@
     <img src="public/assets/logo.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">GitHub Match</h3>
+  <h3 align="center">GitHub the List</h3>
 
   <p align="center">
-Aplicación Web Progresiva para todos los que desean encontrar usuarios y repositorios dentro de GitHub    <br />
-    <a href="https://github.com/eriika19/GitHubMatch/tree/master/components"><strong>Explorar proyecto »</strong></a>
+Aplicación Web Progresiva para todos los que desean encontrar y crear listas con usuarios y repositorios GitHub.   <br />
+    <a href="https://github.com/eriika19/GitHub-the-list"><strong>Explorar proyecto »</strong></a>
     <br />
     <br />
     <a href="https://github-match.now.sh/">Ir a Demo</a>
     ·
-    <a href="https://github.com/eriika19/GitHubMatch/issues">Reportar Problema</a>
+    <a href="https://github.com/eriika19/GitHub-the-list/issues">Reportar Problema</a>
     ·
   </p>
   <br />
@@ -34,7 +33,7 @@ Aplicación Web Progresiva para todos los que desean encontrar usuarios y reposi
 
 - [Acerca del Proyecto](#acerca-del-proyecto)
   - [Herramientas](#_herramientas_)
-  - [Próximos avances](#próximos-avances)
+  - [Próximos avances](#siguientes-alcances)
 - [Contacto](#contacto)
 
  <br />
@@ -65,7 +64,7 @@ Esta aplicación se desarrollo para facilitar la búsqueda y navegación de repo
  <br />
 
 
-## Próximos avances
+## Siguientes alcances
 
 - Completar la asignación de PropTypes en cada componente para con la finalidad de facilitar el mantenimiento de la Aplicación
 
@@ -84,6 +83,6 @@ LinkedIn - [@itzelenciso](https://www.linkedin.com/in/itzelenciso/)
 
 Correo - enciso.iq@gmail.com
 
-Link del proyecto : [https://github.com/eriika19/GitHubMatch/tree/master](https://github.com/eriika19/GitHubMatch/tree/master)
+Link del proyecto : [https://github.com/eriika19/GitHubMatch/tree/master](https://github.com/eriika19/GitHub-the-list)
 
 ¡Gracias por visitar! 😊
