@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/eriika19/GitHub-the-list/issues"
   },
-  "homepage": "https://github-match.now.sh",
+  "homepage": "https://github-the-list.now.sh",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",

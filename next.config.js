@@ -79,17 +79,17 @@ const nextConfig = {
         filename: "static/manifest.json",
         name: "Runa | GitHub in list",
         short_name: "GitHub in list",
-        description: "o find GitHub's repositories and users in a list.",
+        description: "App to find GitHub's repositories and users to make a list.",
         background_color: "#FFF",
-        theme_color: "#B2CCFF",
+        theme_color: "#8378f4",
         display: "standalone",
         orientation: "portrait",
         fingerprints: false,
         inject: false,
         start_url: "/",
         ios: {
-          "apple-mobile-web-app-title": "GitHub Match",
-          "apple-mobile-web-app-status-bar-style": "#B2CCFF"
+          "apple-mobile-web-app-title": "GitHub the List",
+          "apple-mobile-web-app-status-bar-style": "#8378f4"
         },
         icons: [
           {

@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "url": "/_next/static/chunks/commons.7164758fe283708a8f0d.js",
-    "revision": "e4a3f8d3f08f2ca2a8b4"
+    "url": "/_next/static/chunks/commons.b0d04d7ce74a18213801.js",
+    "revision": "c2e3cd2ff3fa40d4dd1d"
   },
   {
     "url": "/_next/static/chunks/styles.b314d5a56ab2e9ea3b68.js",
-    "revision": "5bd24622c53748b1bacf"
+    "revision": "c7c19d0960f11db02ef9"
   },
   {
-    "url": "/_next/static/css/styles.1773f116.chunk.css",
-    "revision": "5bd24622c53748b1bacf"
+    "url": "/_next/static/css/styles.7dab86fc.chunk.css",
+    "revision": "c7c19d0960f11db02ef9"
   },
   {
     "url": "/_next/static/runtime/main-7dade8777a133b1f5386.js",
@@ -24,24 +24,24 @@ self.__precacheManifest = [
     "revision": "71726f334912f74c262a"
   },
   {
-    "url": "/_next/static\\LqzOeYcEtMXBEtxRLL1HP\\pages\\_app.js",
-    "revision": "6e51ba5854085c52c98f"
+    "url": "/_next/static\\vu2mi1aIyiGu0tf2fBKY-\\pages\\_app.js",
+    "revision": "ebe5c8ed9ff5f3f93a2e"
   },
   {
-    "url": "/_next/static\\LqzOeYcEtMXBEtxRLL1HP\\pages\\_error.js",
-    "revision": "8bc81063d15672ede2e2"
+    "url": "/_next/static\\vu2mi1aIyiGu0tf2fBKY-\\pages\\_error.js",
+    "revision": "de189305cb2085f6c8ba"
   },
   {
-    "url": "/_next/static\\LqzOeYcEtMXBEtxRLL1HP\\pages\\index.js",
-    "revision": "30d21e176fbc03d474e4"
+    "url": "/_next/static\\vu2mi1aIyiGu0tf2fBKY-\\pages\\index.js",
+    "revision": "4a4573456a4bd850b5e0"
   },
   {
-    "url": "/_next/static\\LqzOeYcEtMXBEtxRLL1HP\\pages\\repositories.js",
-    "revision": "9b1c112d167239a811be"
+    "url": "/_next/static\\vu2mi1aIyiGu0tf2fBKY-\\pages\\repositories.js",
+    "revision": "5f9a9be2d845d0b9d7b8"
   },
   {
-    "url": "/_next/static\\LqzOeYcEtMXBEtxRLL1HP\\pages\\users.js",
-    "revision": "20240c3faf6b9593e062"
+    "url": "/_next/static\\vu2mi1aIyiGu0tf2fBKY-\\pages\\users.js",
+    "revision": "607cd0480f51b987f00b"
   }
 ];
 
@@ -77,6 +77,6 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/^https?.*/, new workbox.strategies.NetworkFirst({ "cacheName":"OfflineCache", plugins: [new workbox.expiration.Plugin({ maxEntries: 200, purgeOnQuotaError: false })] }), 'GET');
-workbox.routing.registerRoute(/^https:\/\/sheetsu.com\/apis\/v1.0bu\//, new workbox.strategies.StaleWhileRevalidate({ "cacheName":"api-cache", plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ], headers: { 'x-test': 'true' } })] }), 'GET');
+workbox.routing.registerRoute(/^https:\/\/api.github.com\//, new workbox.strategies.StaleWhileRevalidate({ "cacheName":"api-cache", plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ], headers: { 'x-test': 'true' } })] }), 'GET');
 workbox.routing.registerRoute(/.*\.(?:png|jpg|jpeg|svg|gif)/, new workbox.strategies.CacheFirst(), 'GET');
 workbox.routing.registerRoute(/(results | question)/, new workbox.strategies.NetworkFirst({ plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ], headers: { 'x-test': 'true' } })] }), 'GET');
