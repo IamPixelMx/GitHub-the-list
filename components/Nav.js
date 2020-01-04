@@ -32,9 +32,9 @@ class Nav extends PureComponent {
               data-target="navbarMenuHeroB"
               onClick={this.toggle}
             >
-              <span className="is-nice-blue"></span>
-              <span className="is-nice-blue"></span>
-              <span className="is-nice-blue"></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </span>
           </div>
           <div
@@ -52,7 +52,7 @@ class Nav extends PureComponent {
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <hr className="navbar-divider" />
-                <a className="navbar-link is-nice-blue">Buscar</a>
+                <a className="navbar-link is-purple">Buscar</a>
                 <div className="navbar-dropdown is-boxed is-right">
                   <NavbarItem {...NAV_ITEMS[1]} {...this.props} />
                   <NavbarItem {...NAV_ITEMS[2]} {...this.props} />
@@ -63,6 +63,9 @@ class Nav extends PureComponent {
         </div>
         <style jsx>
           {`
+            span {
+              color: #7a6ff0;
+            }
             .nav-logo img {
               width: 6.5rem;
               height: auto;
@@ -85,8 +88,8 @@ const NavbarItem = ({ route, page, activeRoute }) => (
     <a
       className={
         route === activeRoute
-          ? "navbar-item is-nice-blue is-active"
-          : "navbar-item is-nice-blue"
+          ? "navbar-item is-purple is-active"
+          : "navbar-item is-purple"
       }
     >
       {page}

@@ -3,9 +3,9 @@ import { bool } from "prop-types";
 const Loader = ({ loading }) => {
   return (
     <div
-      className={
+      className = {
         loading
-          ? "pageloader is-bgnice-blue is-active"
+          ? "pageloader is-bg-purple is-active"
           : "is-bgnice-blue pageloader"
       }
     >

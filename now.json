@@ -1,5 +1,5 @@
 {
-  "name": "github-match",
+  "name": "github-the-list",
   "version": 2,
   	"env": {
 		"NODE_ENV": "production"

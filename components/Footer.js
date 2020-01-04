@@ -4,12 +4,13 @@ const Footer = () => (
   <footer className="footer">
     <div className="content has-text-centered">
       <p>
-        <strong>GitHub Match</strong> created with &#10084; by
+        <strong>GitHub the List</strong> was created with &#10084; by
         <a href="https://itzelenciso.com"> Itzel Enciso</a> .
       </p>
       <p>
         This website is deployed with Now&#9650; and the source code is in
-        <a href="https://github.com/eriika19/GitHubMatch"> GitHub</a> . ¡Enjoy!
+        <a href="https://github.com/eriika19/GitHub-the-list"> GitHub</a> .
+        ¡Enjoy!
         <span className="icon hvr-icon-spin">
           <i>
             <FontAwesomeIcon

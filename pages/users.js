@@ -55,9 +55,8 @@ class UsersPage extends PureComponent {
   };
 
   render() {
-    //console.log("usersProps: ", this.props);
     const { usersSearchValue } = this.state;
-
+    //console.log("usersProps: ", this.props);
     return (
       <Fragment>
         <Layout>
@@ -72,7 +71,7 @@ class UsersPage extends PureComponent {
                   }
                 >
                   <input
-                    className="input is-info is-rounded"
+                    className="input is-aqua is-rounded"
                     type="text"
                     placeholder="Buscar usuario GitHub.."
                     onChange={this.handleChange}

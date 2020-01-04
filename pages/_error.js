@@ -41,7 +41,7 @@ const RenderComp = ({ statusCode }) => (
     <br />
     <div className="buttons is-centered">
       <button
-        className="button level-item is-info is-light is-outlined is-medium is-rounded"
+        className="button level-item is-purple is-light is-medium is-rounded"
         onClick={() => Router.push("/")}
       >
         Ir a página de inicio

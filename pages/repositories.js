@@ -59,9 +59,8 @@ class RepositoriesPage extends PureComponent {
   };
 
   render() {
-   // console.log("repositoriesProps: ", this.props);
     const { reposSearchValue } = this.state;
-
+    // console.log("repositoriesProps: ", this.props);
     return (
       <Fragment>
         <Layout>
@@ -76,7 +75,7 @@ class RepositoriesPage extends PureComponent {
                   }
                 >
                   <input
-                    className="input is-info is-rounded"
+                    className="input is-aqua is-rounded"
                     type="text"
                     placeholder="Buscar repositorio GitHub.."
                     onChange={this.handleChange}

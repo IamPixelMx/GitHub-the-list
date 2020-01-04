@@ -4,6 +4,8 @@ const { withPlugins } = require("next-compose-plugins");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
+const BASE_URL = "https://api.github.com/";
+
 const nextConfig = {
   workboxOpts: {
     clientsClaim: true,
@@ -22,7 +24,7 @@ const nextConfig = {
         }
       },
       {
-        urlPattern: new RegExp("^https://sheetsu.com/apis/v1.0bu/"),
+        urlPattern: new RegExp(`^${BASE_URL}`),
         handler: "StaleWhileRevalidate",
         options: {
           cacheName: "api-cache",
@@ -75,9 +77,9 @@ const nextConfig = {
     config.plugins.push(
       new WebpackPwaManifest({
         filename: "static/manifest.json",
-        name: "Luuna | GitHub Match",
-        short_name: "GitHub Match",
-        description: "Web App to find GitHub repositories and users.",
+        name: "Runa | GitHub in list",
+        short_name: "GitHub in list",
+        description: "o find GitHub's repositories and users in a list.",
         background_color: "#FFF",
         theme_color: "#B2CCFF",
         display: "standalone",
@@ -115,8 +117,5 @@ const nextConfig = {
     return config;
   }
 };
-
-/* module.exports = withCSS(nextConfig);
-module.exports = withOffline(nextConfig) */
 
 module.exports = withPlugins([[withCSS], [withOffline]], nextConfig);

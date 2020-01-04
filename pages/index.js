@@ -21,7 +21,7 @@ class Home extends Component {
   }
 
   handleLoad = () => {
-    // Manejo de Splash con logo de Luuna
+    // Manejo de Splash con logo de Runa
     setTimeout(this.changeState, 700);
   };
 
@@ -45,18 +45,18 @@ class Home extends Component {
               <h2 className="title is-2 is-spaced">¡Hola!</h2>
               <h5 className="subtitle is-5">
                 Bienvenid@ al mejor buscador de usuarios y repositorios dentro
-                de GitHub.
+                de GitHub, busquemos  un match y hagamos tu lista.
               </h5>
               <div className="content has-text-centered has-lg-margin-top">
                 <p className="is-size-5"> ¿Qué match deseas buscar hoy?</p>
                 <div className="buttons is-centered">
                   <Link href="/users">
-                    <button className="button is-medium is-rounded is-info is-light">
+                    <button className="button is-medium is-rounded is-orange">
                       Usuario GitHub
                     </button>
                   </Link>
                   <Link href="/repositories">
-                    <button className="button is-medium is-rounded is-success is-light">
+                    <button className="button is-medium is-rounded is-success">
                       Repositorio GitHub
                     </button>
                   </Link>
