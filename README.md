@@ -33,7 +33,7 @@ Aplicación Web Progresiva para todos los que desean encontrar y crear listas co
 
 - [Acerca del Proyecto](#acerca-del-proyecto)
   - [Herramientas](#_herramientas_)
-  - [Próximos avances](#siguientes-alcances)
+  - [Siguientes alcances](#siguientes-alcances)
 - [Contacto](#contacto)
 
  <br />
