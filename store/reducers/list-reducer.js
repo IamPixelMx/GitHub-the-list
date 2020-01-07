@@ -7,15 +7,13 @@ import {
 } from "../../constants/ActionTypes";
 
 const INITIAL_STATE = {
- // searching: false,
-  usersList: "",
-  reposList: "",
-  usersTotalResults: "",
+  usersList: [],
+  reposList: [],
+//  usersTotalResults: "",
   pagination: { currentPage: "", lastPage: "" },
-//  error: ""
 };
 
-const usersReducer = (state = INITIAL_STATE, { type, payload = {} }) => {
+const listReducer = (state = INITIAL_STATE, { type, payload = {} }) => {
   switch (type) {
     case ADD_REPO:
       return INITIAL_STATE;
@@ -28,7 +26,7 @@ const usersReducer = (state = INITIAL_STATE, { type, payload = {} }) => {
       };
     }
 
-    case GET_USERS_MATCH:
+/*     case GET_USERS_MATCH:
       return { ...state, searching: true };
 
     case GET_USERS_MATCH_FAIL:
@@ -40,11 +38,11 @@ const usersReducer = (state = INITIAL_STATE, { type, payload = {} }) => {
         usersMatch: payload,
         searching: false,
         error: ""
-      };
+      }; */
 
     default:
       return state;
   }
 };
 
-export default usersReducer;
+export default listReducer;

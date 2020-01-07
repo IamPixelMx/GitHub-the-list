@@ -1,4 +1,5 @@
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch, useStore } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const getDaysAgo = date => {
@@ -11,7 +12,19 @@ const getDaysAgo = date => {
   return daysAgo;
 };
 
+const findIfItemInList = id => {
+  const store = useStore();
+  const { reposList } = store.getState().listReducer;
+ // console.log(reposList);  
+  const index = reposList.findIndex(repo => repo.id === id)
+  //console.log(index);
+  
+  return index < 0 ? false : true;
+};
+
 const RepoCard = props => {
+  const [addedItem, setAddedItem] = useState(findIfItemInList(id));
+  const store = useStore();
   const dispatch = useDispatch();
   const {
     description,
@@ -25,6 +38,9 @@ const RepoCard = props => {
   } = props;
 
   const daysAgo = getDaysAgo(updated_at);
+
+  //console.log("addedItem", addedItem);
+  
 
   return (
     <div className="card" id={id}>
@@ -87,11 +103,15 @@ const RepoCard = props => {
           </div>
         </div>
         <div className="media-right icon">
-          <span className="icon hvr-icon-pulse-shrink">{`Agregar a lista `}
+          <span
+            className="icon hvr-icon-pulse-shrink"
+            onClick={() => setAddedItem(!addedItem)}
+          >
+            {addedItem ? `Eliminar de lista ` : `Agregar a lista `}
             <i>
               <FontAwesomeIcon
                 className="fas fa-lg hvr-icon"
-                icon="plus-circle"
+                icon={addedItem ? "minus-circle" : "plus-circle"}
               />
             </i>
           </span>
