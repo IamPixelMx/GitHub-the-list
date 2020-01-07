@@ -19,3 +19,14 @@ export const GET_REPOS_MATCH_FAIL = "GET_REPOS_MATCH_FAIL";
 export const SET_REPOS_PAGINATION = "SET_REPOS_TOTAL_RESULTS";
 export const CLEAN_REPOS_MATCH = "CLEAN_REPOS_MATCH";
 
+// =================== List Part ==================== //
+
+export const ADD_REPO = "ADD_REPO";
+export const ADD_USER = "ADD_USER";
+export const DELETE_REPO = "DELETE_REPO";
+export const DELETE_USER = "DELETE_USER";
+
+export const SET_LIST_PAGINATION = "SET_LIST_PAGINATION";
+
+
+

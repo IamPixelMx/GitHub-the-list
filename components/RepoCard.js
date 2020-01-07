@@ -1,3 +1,4 @@
+import { useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const getDaysAgo = date => {
@@ -11,8 +12,10 @@ const getDaysAgo = date => {
 };
 
 const RepoCard = props => {
+  const dispatch = useDispatch();
   const {
     description,
+    id,
     forks_count,
     homepage,
     html_url,
@@ -24,7 +27,7 @@ const RepoCard = props => {
   const daysAgo = getDaysAgo(updated_at);
 
   return (
-    <div className="card">
+    <div className="card" id={id}>
       <article className="media">
         <figure className="media-left">
           <p className="image is-96x96 is-img-card">
@@ -82,6 +85,16 @@ const RepoCard = props => {
               )}
             </div>
           </div>
+        </div>
+        <div className="media-right icon">
+          <span className="icon hvr-icon-pulse-shrink">{`Agregar a lista `}
+            <i>
+              <FontAwesomeIcon
+                className="fas fa-lg hvr-icon"
+                icon="plus-circle"
+              />
+            </i>
+          </span>
         </div>
       </article>
     </div>
