@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-// import { useDispatch } from "react-redux";
-import { node } from "prop-types";
+import { connect } from "react-redux";
+import { node, func } from "prop-types";
 import Router from "next/router";
 
-/* import { cleanUsersMatch } from "../store/actions/users-actions";
-import { cleanReposMatch } from "../store/actions/repositories-actions"; */
+import { cleanUsersMatch } from "../store/actions/users-actions";
+import { cleanReposMatch } from "../store/actions/repositories-actions";
 import Loader from "./Loader";
 
 class Layout extends Component {
   static propTypes = {
-    children: node.isRequired
+    children: node.isRequired,
+    dispatch: func.isRequired
   };
 
   state = {
@@ -18,9 +19,9 @@ class Layout extends Component {
 
   componentDidMount() {
     Router.onRouteChangeStart = () => {
-      /*       const dispatch = useDispatch();
+      const { dispatch } = this.props;
       dispatch(cleanUsersMatch());
-      dispatch(cleanReposMatch()); */
+      dispatch(cleanReposMatch());
       this.setState({ loading: true });
     };
     Router.onRouteChangeComplete = () => {
@@ -32,7 +33,7 @@ class Layout extends Component {
   }
 
   render() {
-    //console.log("layoutProps: ", this.props);
+    // console.log("layoutProps: ", this.props);
     const { loading } = this.state;
     const { children } = this.props;
     return (
@@ -167,4 +168,4 @@ class Layout extends Component {
   }
 }
 
-export default Layout;
+export default connect()(Layout);

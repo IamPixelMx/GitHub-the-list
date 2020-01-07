@@ -1,4 +1,4 @@
-[![Framework](https://img.shields.io/badge/Framework-Next.js-important?style=plastic)](https://travis-ci.org/badges/badgerbadgerbadger) [![Version](https://img.shields.io/badge/Version-v.2.1.1b-blueviolet?style=plastic)](https://rubygems.org/gems/badgerbadgerbadger) [![License](https://img.shields.io/:license-ISC-blue.svg?style=plastic)](http://badges.isc-license.org)
+[![Framework](https://img.shields.io/badge/Framework-Next.js-important?style=plastic)](https://github.com/zeit/next.js/) [![Version](https://img.shields.io/badge/version-v.1.2.2-green?style=plastic)](https://rubygems.org/gems/badgerbadgerbadger) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-blueviolet?style=plastic)](https://github.com/prettier/prettier) [![styled guide](https://img.shields.io/badge/style_guide-Airbnb-violet?style=plastic)](https://github.com/airbnb/javascript) [![License](https://img.shields.io/:license-ISC-blue.svg?style=plastic)](http://badges.isc-license.org)
 
 ---
 
@@ -33,7 +33,7 @@ Aplicación Web Progresiva para todos los que desean encontrar y crear listas co
 
 - [Acerca del Proyecto](#acerca-del-proyecto)
   - [Herramientas](#_herramientas_)
-  - [Siguientes alcances](#siguientes-alcances)
+  - [Próximos alcances](#próximos-alcances)
 - [Contacto](#contacto)
 
  <br />
@@ -60,15 +60,18 @@ Esta aplicación se desarrollo para facilitar la búsqueda y navegación de repo
 - [Font Awesome](https://fontawesome.com)
 - [Hover.css](https://ianlunn.github.io/Hover/)
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+- [Prettier](https://github.com/prettier/prettier)
+- [Airbnb Style Guide](https://github.com/airbnb/javascript)
+
+
 
  <br />
 
 
-## Siguientes alcances
+## Próximos alcances
 
 - Completar la asignación de PropTypes en cada componente para con la finalidad de facilitar el mantenimiento de la Aplicación
 
-- Asignar API_KEY para las peticiones a la API de GitHub
  <br />
 
 ---
