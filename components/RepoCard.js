@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useDispatch, useStore } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { updateReposList } from "../store/actions/repositories-list-actions";
+
 const getDaysAgo = date => {
   const updateAt = new Date(date);
   const currentDate = new Date();
@@ -12,20 +14,16 @@ const getDaysAgo = date => {
   return daysAgo;
 };
 
-const findIfItemInList = id => {
+const getIndex = id => {
   const store = useStore();
-  const { reposList } = store.getState().listReducer;
- // console.log(reposList);  
-  const index = reposList.findIndex(repo => repo.id === id)
-  //console.log(index);
-  
-  return index < 0 ? false : true;
+  const { reposList } = store.getState().reposListReducer;
+  const index = reposList.findIndex(repo => repo.id === id);
+  console.log("reposList en repocard :", reposList);
+
+  return index;
 };
 
 const RepoCard = props => {
-  const [addedItem, setAddedItem] = useState(findIfItemInList(id));
-  const store = useStore();
-  const dispatch = useDispatch();
   const {
     description,
     id,
@@ -35,13 +33,13 @@ const RepoCard = props => {
     name,
     owner,
     updated_at
-  } = props;
-
-  const daysAgo = getDaysAgo(updated_at);
-
-  //console.log("addedItem", addedItem);
+  } = props;  
+  const item = props;
   
-
+  const index = getIndex(id);
+  const [addedItem, setAddedItem] = useState(index < 0 ? false : true);
+  const daysAgo = getDaysAgo(updated_at);
+  const dispatch = useDispatch();
   return (
     <div className="card" id={id}>
       <article className="media">
@@ -105,7 +103,10 @@ const RepoCard = props => {
         <div className="media-right icon">
           <span
             className="icon hvr-icon-pulse-shrink"
-            onClick={() => setAddedItem(!addedItem)}
+            onClick={() => {
+              dispatch(updateReposList({ item, index }));
+              setAddedItem(!addedItem);
+            }}
           >
             {addedItem ? `Eliminar de lista ` : `Agregar a lista `}
             <i>

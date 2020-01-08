@@ -94,15 +94,15 @@ class UsersPage extends PureComponent {
                   ? ""
                   : `Se encontró ${this.props.usersTotalResults} coincidencia(s)`}
                 <div id="results" className="container has-margin-top">
-                    {this.props.usersMatch.length > 0
-                        ? this.props.usersMatch.map((props =>
-                          props === undefined ? (
-                            <Oops key={shortid.generate()} />
-                          ) : (
-                              <UserCard {...props} key={props.id}/>
-                            )
+                  {this.props.usersMatch.length > 0
+                    ? this.props.usersMatch.map(props =>
+                        props === undefined ? (
+                          <Oops key={shortid.generate()} />
+                        ) : (
+                          <UserCard {...props} key={props.id} />
                         )
-                        : ""}
+                      )
+                    : ""}
                 </div>
               </section>
             </section>
