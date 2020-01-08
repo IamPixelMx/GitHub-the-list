@@ -6,7 +6,7 @@ import {
 } from "../../constants/ActionTypes";
 
 const INITIAL_STATE = {
-  loadingReposList: false,
+  loadingList: false,
   reposList: [],
   //reposTotalList: "",
   //pagination: { currentPage: "", lastPage: "" },
@@ -16,18 +16,18 @@ const INITIAL_STATE = {
 const reposListReducer = (state = INITIAL_STATE, { type, payload = {} }) => {
   switch (type) {
     case UPDATE_REPOS_LIST:
-      return { ...state, loadingReposList: true };
+      return { ...state, loadingList: true };
 
     case UPDATE_REPOS_LIST_SUCCESS:
       return {
         ...state,
         reposList: payload,
-        loadingReposList: false,
+        loadingList: false,
         error: ""
       };
 
     case UPDATE_REPOS_LIST_FAIL:
-      return { ...state, error: payload, loadingReposList: false };
+      return { ...state, error: payload, loadingList: false };
 
     /*     case SET_REPOS_LIST_PAGINATION: {
       return {

@@ -8,14 +8,13 @@ const getIndex = id => {
   const store = useStore();
   const { usersList } = store.getState().usersListReducer;
   const index = usersList.findIndex(user => user.id === id);
-  console.log("usersList en usercard :", usersList);
-
   return index;
 };
 
 const UserCard = props => {
   const { avatar_url, bio, html_url, id, login, location, name } = props;
   const item = props;
+
   const index = getIndex(id);
   const [addedItem, setAddedItem] = useState(index < 0 ? false : true);
 

@@ -18,8 +18,6 @@ const getIndex = id => {
   const store = useStore();
   const { reposList } = store.getState().reposListReducer;
   const index = reposList.findIndex(repo => repo.id === id);
-  console.log("reposList en repocard :", reposList);
-
   return index;
 };
 
@@ -33,12 +31,12 @@ const RepoCard = props => {
     name,
     owner,
     updated_at
-  } = props;  
+  } = props;
   const item = props;
-  
+
   const index = getIndex(id);
   const [addedItem, setAddedItem] = useState(index < 0 ? false : true);
-  const daysAgo = getDaysAgo(updated_at);
+  const daysAgo = getDaysAgo(updated_at);  
   const dispatch = useDispatch();
   return (
     <div className="card" id={id}>

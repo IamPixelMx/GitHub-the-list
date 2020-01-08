@@ -48,6 +48,9 @@ class Layout extends Component {
             .view {
               min-height: 100vh;
             }
+            .hide {
+              display: none;
+            }
             .content-container {
               display: flex;
               align-items: center;
