@@ -1,6 +1,7 @@
 import React, { PureComponent, Fragment } from "react";
-import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import shortid from "shortid";
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -43,7 +44,9 @@ class UsersPage extends PureComponent {
     /* Verifiy valid searchValue */
     if (usersSearchValue.length > 0) {
       const { dispatch, usersPerPage } = this.props;
-      dispatch(getUsersMatch({ usersSearchValue, currentPage: 1, usersPerPage }));
+      dispatch(
+        getUsersMatch({ usersSearchValue, currentPage: 1, usersPerPage })
+      );
     }
   };
 
@@ -51,11 +54,14 @@ class UsersPage extends PureComponent {
     const page = e.target.name;
     const { usersSearchValue } = this.state;
     const { dispatch, usersPerPage } = this.props;
-    dispatch(getUsersMatch({ usersSearchValue, currentPage: page, usersPerPage }));
+    dispatch(
+      getUsersMatch({ usersSearchValue, currentPage: page, usersPerPage })
+    );
   };
 
   render() {
     const { usersSearchValue } = this.state;
+
     //console.log("usersProps: ", this.props);
     return (
       <Fragment>
@@ -85,18 +91,18 @@ class UsersPage extends PureComponent {
               </form>
               <section id="result">
                 {this.props.usersMatch === ""
-                  ? ''
+                  ? ""
                   : `Se encontró ${this.props.usersTotalResults} coincidencia(s)`}
                 <div id="results" className="container has-margin-top">
                   {this.props.usersMatch.length > 0
-                    ? this.props.usersMatch.map((props, i) =>
+                    ? this.props.usersMatch.map(props =>
                         props === undefined ? (
-                        <Oops key={i}/>
+                          <Oops key={shortid.generate()} />
                         ) : (
-                          <UserCard {...props} key={i} />
+                          <UserCard {...props} key={props.id} />
                         )
                       )
-                    : ''}
+                    : ""}
                 </div>
               </section>
             </section>
