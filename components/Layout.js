@@ -153,6 +153,10 @@ class Layout extends Component {
               margin-top: 1.2rem;
               min-width: 17.5rem;
             }
+            .hvr-icon-pulse-shrink.hvr-icon {
+              width: 1.1rem;
+            }
+
             @media (max-width: 1023px) {
               .section {
                 padding-left: 0.4rem;
