@@ -52,10 +52,10 @@ const ListsPage = () => {
             </div>
             <section id="show-list">
               {categorieList === USERS
-                ? `Tienes ${usersList.length} guardados en tu lista`
+                ? `Tienes ${usersList.length} usuarios guardados en tu lista`
                 : ""}
               {categorieList === REPOSITORIES
-                ? `Tienes ${reposList.length} guardados en tu lista`
+                ? `Tienes ${reposList.length} repositorios guardados en tu lista`
                 : ""}
               <div
                 id="results"
