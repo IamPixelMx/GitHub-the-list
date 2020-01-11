@@ -149,6 +149,10 @@ class Layout extends Component {
               color: #7a6ff0;
               border: solid 1px #7a6ff0;
             }
+            .tabs.is-toggle li.is-active a {
+              background: #f5a623;
+              border-color: #f5a623;
+            }
             .icon.hvr-icon-pulse-shrink {
               margin-top: 1.2rem;
               min-width: 17.5rem;

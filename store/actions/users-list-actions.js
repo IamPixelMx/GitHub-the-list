@@ -2,7 +2,6 @@ import {
   UPDATE_USERS_LIST,
   UPDATE_USERS_LIST_SUCCESS,
   UPDATE_USERS_LIST_FAIL
-  //  SET_USERS_LIST_PAGINATION
 } from "../../constants/ActionTypes";
 
 export const updateUsersList = (payload = {}) => ({
@@ -20,7 +19,3 @@ export const updateUsersListFail = payload => ({
   payload
 });
 
-/* export const setUsersListPagination = payload => ({
-  type: SET_USERS_LIST_PAGINATION,
-  payload
-}); */

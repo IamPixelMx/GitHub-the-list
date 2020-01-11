@@ -39,7 +39,6 @@ class NextApp extends App {
 
   render() {
     const { Component, pageProps, store, router } = this.props;
-
     return (
       <Provider store= {store}>
           <Header title= {RouterTitle[router.pathname]} />

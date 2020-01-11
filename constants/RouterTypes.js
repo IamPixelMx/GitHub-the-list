@@ -1,6 +1,5 @@
 /******************** GitHub the List *******************/
 
-
 export const RouterTitle = {
          "/": "Runa | GitHub the List",
          "/lists": "GitHub the List | Lists",
