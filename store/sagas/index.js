@@ -14,12 +14,10 @@ import {
  import {
   updateUsersListSuccess,
   updateUsersListFail
-  //setUsersListPagination
 } from "../actions/users-list-actions";
 import {
   updateReposListSuccess,
   updateReposListFail
-  //setReposListPagination
 } from "../actions/repositories-list-actions";
 
 import {
@@ -71,6 +69,7 @@ function* reposMatchArr(action) {
 }
 
 const getUsersList = state => state.usersListReducer.usersList;
+const getReposList = state => state.reposListReducer.reposList;
 
 function* updateUsersListArr(action) {
   const { index, item } = action.payload;
@@ -95,8 +94,6 @@ function* updateUsersListArr(action) {
     }
   }
 }
-
-const getReposList = state => state.reposListReducer.reposList;
 
 function* updateReposListArr(action) {
   const { index, item } = action.payload;

@@ -11,7 +11,7 @@
   <h3 align="center">GitHub the List</h3>
 
   <p align="center">
-Aplicación Web Progresiva para todos los que desean encontrar y crear listas con usuarios y repositorios GitHub.   <br />
+Esta aplicación se desarrollo para facilitar la búsqueda y navegación de repositorios y usuarios en GitHub. Se consumió la API de GitHub implementando solicitudes Axios, implementando la configuración necesaria para obtener resultados satisfactorios en todas las auditorías de Lighthouse; con el fin de desarrollar una app _mobile first_ propocione la mejor experiencia de usuario posible.   <br />
     <a href="https://github.com/eriika19/GitHub-the-list"><strong>Explorar proyecto »</strong></a>
     <br />
     <br />
@@ -70,9 +70,10 @@ Esta aplicación se desarrollo para facilitar la búsqueda y navegación de repo
 
 ## Próximos alcances
 
-- Completar la asignación de PropTypes en cada componente para con la finalidad de facilitar el mantenimiento de la Aplicación
+- Completar la asignación de PropTypes en cada componente; con la finalidad de facilitar el mantenimiento de la Aplicación
 
-- Paginación para la sección de lista de usuarios y repositorios
+- Paginación para la página de listas de usuarios y repositorios GitHub guardados.
+
 
  <br />
 
@@ -86,8 +87,8 @@ Sitio Web - [itzelenciso.com](https://itzelenciso.com/)
 
 LinkedIn - [@itzelenciso](https://www.linkedin.com/in/itzelenciso/)
 
-Correo - enciso.iq@gmail.com
+Correo Gmail - [enciso.iq@gmail.com](<mailto:enciso.iq@gmail.com?subject=Reclutamiento&body=¡Buen día! el motivo de contacto es:>)
 
-Link del proyecto : [https://github.com/eriika19/GitHubMatch/tree/master](https://github.com/eriika19/GitHub-the-list)
+Link del proyecto : [https://github.com/eriika19/GitHub-the-list/tree/master](https://github.com/eriika19/GitHub-the-list)
 
 ¡Gracias por visitar! 😊
